@@ -45,10 +45,10 @@ export default function Update() {
                         </label>
                     </div>
                     <p className='text-xl text-red-500 text-center h-8'>{inputAlert}</p>
-                    <button type="submit" className='bg-blue-700 text-white px-4 py-2 mb-5 rounded-lg hover:bg-black shadow-2xl shadow-gray-900'>
+                    <button type="submit" className='bg-blue-700 text-white px-4 py-2 my-5 rounded-lg hover:bg-black shadow-2xl shadow-gray-900'>
                         Done
                     </button>
-                    <button type='button' onClick={()=>cancelUpdate()} className='bg-yellow-700 hover:bg-red-700 text-white px-4 py-2 mb-5 rounded-lg shadow-2xl shadow-gray-900 '>
+                    <button type='button' onClick={()=>cancelUpdate()} className='bg-yellow-700 hover:bg-red-700 text-white px-4 py-2 my-5 rounded-lg shadow-2xl shadow-gray-900 '>
                         Cancel Update
                     </button>
                 </form>
