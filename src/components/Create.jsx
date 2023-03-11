@@ -49,8 +49,9 @@ export default function Create() {
                     Add User
                 </button>
             </form>}
-            <h1 className='text-3xl text-green-600 my-10 shadow-2xl shadow-gray-900 p-3'>Users List</h1>
-            <div className='flex flex-col flex-wrap sm:flex-row justify-center items-center w-full shadow-2xl shadow-gray-900 rounded-3xl p-5'>
+            <h1 className='text-3xl text-green-600 my-10 shadow-2xl shadow-gray-900 p-3'>
+            {useUser().users.length>0 ? "Users List":"No Users List"}</h1>
+            <div className='flex flex-col flex-wrap sm:flex-row justify-center items-center w-full shadow-2xl shadow-gray-900 rounded-3xl p-5 min-h-[35vh] '>
                 {userData.map((user, id) => (
                     <div key={id} className="border-2 border-green-400 p-3 m-3 flex flex-col justify-center items-center shadow-2xl shadow-gray-900 rounded-3xl ">
                         <div className='m-3'>
